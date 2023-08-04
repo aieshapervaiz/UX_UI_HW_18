@@ -42,8 +42,8 @@
     <!--HEROIMAGE-->
 <div class="heroimage">
    <img id='chibbi' src="../UX_UI_HW_17/images/standing-chibbi-1.png" width="275px" height="550px">
-   <h1>Hi, I'm Ayesha Pervaiz</h1>
-   <h3> Canada-based user experience & interface designer who loves solving problems & improving the lives of others through user-centric designs. </h3>
+   <h1 class="name">Hi, I'm Ayesha Pervaiz</h1>
+   <h3 class="intro"> Canada-based user experience & interface designer who loves solving problems & improving the lives of others through user-centric designs. </h3>
     <button class="button" id="button1">Resume</button>
     <button class="button" id="button2">Portfolio</button>
 </div>
@@ -53,37 +53,31 @@
         </div>
 
 <!--My Recent work-->
-<div class="recentWork">
-    <h3>My Recent Work</h3>
-    <p>Below are a few selected projects from my UX course.</p>
-    <p>I have put in a lot of blood, sweat, and tears in these projects.</p>
-</div>
+    <h3 class="recentWork">My Recent Work</h3>
+    <p class="para1">Below are a few selected projects from my UX course.</p>
+    <p class="para2">I have put in a lot of blood, sweat, and tears in these projects.</p>
+
 <!--Cards1-->
-<ul> <li> 
-    <div class="card1"></div>
-    <div class="card-content1"></div>
-    <div class="card-image1">
-    <span class="card-caption">Hello</span>
-    <img src="images/1.png"></div>
-    <span class="card-title">text here</span>
-    <div class="card-text">another text here</div>
-    <div class="card-button">
-        <a href="#" title="View Project"><span>View Project</span></a>
-    </div> 
-    <div class="card2"></div>
-    <div class="card-content2"></div>
-    <div class="card-image2">
-    <span class="card-caption">Hello</span>
-    <img src="images/3.png"></div>
-    <span class="card-title">text here</span>
-    <div class="card-text">another text here</div>
-    <div class="card-button">
-        <a href="#" title="View Project"><span>View Project</span></a>
-    </div> 
-    </li></ul>
+<div class="card-container">
+    <div class="card">
+    <img class="card-img1" src="../UX_UI_HW_18/images/1.png" alt="project1" style="width:100%">
+    <div class="container1">
+      <h4 class="heading">Responsive Web Design</h4> 
+      <h6 class="sub-heading">World Animal Protection Website</h4> 
+      <p class="description">Website re-design for a animal welfare organization</p>
+      <button class="card-btn">View Project</button>
+    </div></div>
+    <div class="card2">
+    <img class="card-img2" src="../UX_UI_HW_18/images/2.png" alt="project2" style="width:100%">
+    <div class="container1">
+      <h4 class="heading">Mobile App Design</h4> 
+      <h6 class="sub-heading">Online Health Manage App</h4> 
+      <p class="description">Healink - The missing link to your healthy journey</p>
+      <button class="card-btn">View Project</button>
+    </div>
+  </div>
+</div>
 
-
-</li></ul>
 
 <!--article class="cards" style="width: 18em;">
     <div class="card1">
@@ -109,8 +103,8 @@ article-->
 
 <!--Footer-->
 <footer>
-    <h4> Let’s build something great together! </h4>
-    <p> Feel free to reach out for collaborations or just a friendly hello. </p>
+    <h4 class="footerText1">Let’s build something great together! </h4>
+    <p class="footerText2"> Feel free to reach out for collaborations or just a friendly hello. </p>
     <div class='footerIcons'>
      <a href="https://www.linkedin.com/in/ayeshapervaiz1914/">
         <img src="../UX_UI_HW_17/images/Linkedin white.svg" width="30px" height="30px">
@@ -124,7 +118,7 @@ article-->
      <a href="#">
         <img src="../UX_UI_HW_17/images/Email white.svg" width="30px" height="30px">
      </a> </div>
-     <p> <span>©</span>2023, All rights reserved.</p>
+     <p class="copyRights"> <span>©</span>2023, All rights reserved.</p>
    </footer>
 </body>
 </html>
