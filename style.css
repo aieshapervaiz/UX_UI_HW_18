@@ -14,27 +14,6 @@ header {
     align-items: flex-end;
     justify-content: space-between;
 }
-/*.navbar {
-    list-style: none;
-    font-family: "poppins", "sans-serif";
-    font-weight: 500;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-a ::before {
-    color: black;
-    text-decoration: none;
-  }
-a:hover ::before{
-    color:maroon;
-    text-decoration: none;
-    border-bottom: 3px solid maroon;
-   
-}*/
 
 .navbar {
     list-style-type: none;
@@ -156,7 +135,11 @@ button:hover{
     background-image: linear-gradient(to left, #65060D, #981724);
     background-position: -100% 100%;
     font-weight: 600;
+    text-shadow: black;
+    box-shadow: 0 8px 16px 0 black(0,0,0,1);
+    transform: scale(1.02) translateY(-5px);
   }
+  
 h5 {
     width: auto;
     color: white;
@@ -171,11 +154,11 @@ h5 {
     word-wrap: normal;
     letter-spacing: 1px;
     word-spacing: 2px;
-    /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 h5:hover {
   text-shadow: 4px 4px 10px black;
+  transform: scale(1.02) translateY(-5px);
 }
 
 #grad1{
@@ -229,6 +212,7 @@ h5:hover {
   background-image: linear-gradient(#818181, #000000);
   margin-top: 56px;
   border-radius: 30px;
+  background-color: #444444 /*For browsers that do not support gradients*/
 }
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -239,6 +223,7 @@ h5:hover {
   background-image: linear-gradient(#818181, #000000);
   margin-top: 56px;
   border-radius: 30px;
+  background-color: #444444 /*For browsers that do not support gradients*/
 }
 .card-img1{  
     border-radius: 30px;
@@ -247,12 +232,9 @@ h5:hover {
     height: 500px;
 
 }
-.card-img1:hover{
-  transform: scale(1);
-}
 
 .card-img2 {
-  border-radius: 30px;
+    border-radius: 30px;
     box-shadow: 0px 5px 10px black;
     width: 600px;
     height: 500px;
@@ -260,7 +242,13 @@ h5:hover {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.02) translateY(-5px);
 }
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.02) translateY(-5px);
+}
+
 
 .container1 {
   padding: 2px 16px;
@@ -274,10 +262,6 @@ h5:hover {
   margin-top: 30px;
   margin-left: 20px;
   font-weight: 500;
-}
-.heading:hover {
-  color: silver;
-  text-shadow: black;
 }
 
 .sub-heading{
@@ -300,7 +284,6 @@ h5:hover {
 }
 .card-btn {
     margin-bottom: 20px;
-    display: inline-block;
     font-weight: 500px;
     font-family: 'poppins', sans-serif;
     text-decoration: none;
@@ -319,6 +302,16 @@ h5:hover {
     margin-left: 90px;
     margin-top: 15px;
     float: right;
+    background-color: #444444 /*For browsers that do not support gradients*/
+}
+.card-btn:hover{
+  color: white;
+  background-image: linear-gradient(to left, #65060D, #981724);
+  background-position: -100% 100%;
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 black(0,0,0,1);
+  transform: scale(1.02) translateY(-5px);
+  text-shadow: black;
 }
 
 /* Software skills*/
@@ -331,11 +324,6 @@ h5:hover {
   text-decoration: none;
   margin-top: 80px;
 }
-
-/*$main-color: #002733;
-$dark-color: #001925;
-$light-color: #87A4B6;
-$medium-light-color: #013747;*/
 
 .skills{
   box-sizing: border-box;
@@ -350,19 +338,18 @@ $medium-light-color: #013747;*/
   height: 100%;
 }
 .container {
-  /*margin: 0px auto 0px auto;*/
   padding: 0px 90px;
   
-  /*---Desktop---*/
+  
   /*@media (min-width: 1200px) and (max-width: 1441px) {
     max-width: 1250px;
     padding: 0px 36px;     
   }*/
   /*@media (max-width: 767px) {
-    padding: 0px 30px;   ---tablet---
+    padding: 0px 30px;  
   }
   @media (max-width: 479px) {
-    padding: 0px 30px 0px 20px;   ---mobile---
+    padding: 0px 30px 0px 20px; 
   }*/
 }
 
@@ -390,6 +377,7 @@ $medium-light-color: #013747;*/
       border: 8px solid black;
       transition: all 0.3s ease-in;      
       border-radius: 30px;
+      
 
       .image {
         transition: all 0.3s ease-in-out 0.1s;
