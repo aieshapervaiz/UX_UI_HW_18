@@ -206,21 +206,25 @@ button:hover{
 
 #wrapper:before{
    content: " ";
-   animation: animate infinite 8s;
+   animation: animate 5s infinite;
+   animation-play-state: running;
 }
 
 @keyframes animate {
-  0% {
-    content: "  UX Researcher 👌🏼";
+  5% {
+    content: "  UX Researcher 🧠";
   }
-  20% {
-    content: "  Graphic Designer ✨";
+  37% {
+    content: "  UI Designer ✨";
   }
-  40% {
-    content: "  Artist 🎨";
+  50% {
+    content: "  Artist 👩🏻‍🎨";
   }
-  60% {
+  75% {
     content: "Photographer 📸";
+  }
+  100% {
+    content: " Graphic Designer 🪄";
   }
 }
 
@@ -434,9 +438,9 @@ button:hover{
     gap:20px;
     width: 100%;
 
-    /*@media(max-width:700px) {
+    @media(max-width:700px) {
       gap: 30px;
-    }*/
+    }
 
     .box {
       flex: 1 1 12%;
