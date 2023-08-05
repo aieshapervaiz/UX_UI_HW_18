@@ -91,6 +91,27 @@ li {
     margin-top: 160px;
 }
 
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
+
+
 .intro {
 color: white;
 text-align: left;
@@ -148,7 +169,7 @@ button:hover{
     transform: scale(1.02) translateY(-5px);
   }
   
-h5 {
+/*.grad-text {
     width: auto;
     color: white;
     text-align: left;
@@ -164,18 +185,63 @@ h5 {
     word-spacing: 2px;
 }
 
-h5:hover {
+.grad-text:hover {
   text-shadow: 4px 4px 10px black;
   transform: scale(1.02) translateY(-5px);
-}
+}*/
 
-#grad1{
+
+.grad1{
   height: 300px;
   padding: 30px;
   background-color: maroon; /*For browsers that do not support gradients*/
   background-image: linear-gradient(#981724, #65060D);
 }
+#wrapper-text {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  font-size: 32px;
+  padding: 0;
+  text-shadow: 1px 2px 1px black;
+  margin-top: 80px;
 
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 68px;
+  font-weight: 800;
+  padding: 0px;
+  margin-top: -30px;
+  text-shadow: 1px 4px 2px black;
+  flex-wrap: wrap;
+}
+
+#wrapper:before{
+   content: " ";
+   animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+    content: "  UX Researcher 👌🏼";
+  }
+  20% {
+    content: "  Graphic Designer ✨";
+  }
+  40% {
+    content: "  Artist 🎨";
+  }
+  60% {
+    content: "Photographer 📸";
+  }
+}
 .recentWork{
   text-align: center;
   font-size: 32px;
@@ -183,7 +249,7 @@ h5:hover {
   color: black;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  margin-top: 120px;
+  margin-top: 80px;
 
 }
 
@@ -272,15 +338,6 @@ h5:hover {
   font-weight: 500;
 }
 
-sub-heading{
-  font-size: px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  margin-top: -25px;
-  margin-left: 20px;
-  font-weight: 400;
-}
 .description {
   font-size: 24px;
   color: white;
@@ -290,6 +347,7 @@ sub-heading{
   margin-left: 20px;
   font-weight: 600;
 }
+
 .card-btn {
     margin-top: -100px;
     font-weight: 500px;
@@ -326,7 +384,7 @@ sub-heading{
   color: black;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: -5px;
   font-weight: 500;
   text-align: center;
 }
@@ -351,7 +409,7 @@ sub-heading{
   color: black;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .skills{
@@ -359,6 +417,7 @@ sub-heading{
   margin: 0px;
   padding: 0px;
   font-family: 'poppins', sans-serif;
+  margin-top: -60px;
 }
 
 .img-icon {
