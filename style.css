@@ -425,8 +425,8 @@ button:hover{
 
 
 .skills {
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 55px;
+  margin-bottom: 230px;
 
   .skills-flex-container {
     display: flex;
@@ -512,8 +512,8 @@ button:hover{
 float: right;
 display: flex;
 align-items: flex-start;
-margin-right: 90px;
-margin-top: -190px;
+margin-right: 350px;
+margin-top: -160px;
 }
 
 footer {
@@ -523,7 +523,7 @@ footer {
 }
 
 .footerText1 {
-    /*text-align: center;*/
+    text-align: center;
     background-color: black;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -531,7 +531,7 @@ footer {
     font-weight: 500px;
     text-decoration: none;
     letter-spacing: 1.5px;
-    margin-top: 4px;
+    margin-top: 30px;
 }
 
 .footerText2 {
@@ -546,6 +546,7 @@ footer {
   margin-top: -20px;
   margin-bottom: 30px;
 }
+
 .footerIcons {
     display: flex;
     align-items: center;
@@ -553,7 +554,7 @@ footer {
     padding: 0px;
     margin: 3px;
     gap: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .footerIcons img:hover{
@@ -577,6 +578,6 @@ footer {
   font-weight: 400;
   text-decoration: none;
   letter-spacing: 1px;
-  margin-top: -20px;
-  margin-bottom: 30px;
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
